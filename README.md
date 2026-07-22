@@ -3,6 +3,7 @@
 Code for the numerical experiments of:
 
 > L. Pastori, V. Eyring, M. Schwabe, *"Fisher Information, Training and Bias in Fourier Regression Models"*, [arXiv:2510.06945](https://arxiv.org/abs/2510.06945).
+
 **Corresponding Author**: Lorenzo Pastori ([l.pastori.tn@gmail.com](l.pastori.tn@gmail.com))
 
 ## Description
