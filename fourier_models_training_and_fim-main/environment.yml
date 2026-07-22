@@ -1,0 +1,14 @@
+name: envfimfourier
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - scipy
+  - scikit-learn
+  - jax
+  - optax
+  - pennylane
+  - matplotlib
+  - jupyter
+  - ipykernel
