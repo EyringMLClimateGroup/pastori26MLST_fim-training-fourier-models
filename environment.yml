@@ -9,6 +9,7 @@ dependencies:
   - jax
   - optax
   - pennylane
+  - autoray<0.7  # newer autoray removed NumpyMimic, which pennylane.numpy still imports
   - matplotlib
   - jupyter
   - ipykernel

@@ -45,9 +45,35 @@ jointly determine training performance when models are fit to a target function 
 - Jupyter notebooks (`.ipynb`) — used throughout to load the pickled results and produce the
   paper's plots
 
-No `requirements.txt`/environment file is provided; the experiment scripts also hard-code an HPC
-working-directory path (`path_base`, `results_folder`) that must be edited to a local path before
-running.
+The experiment scripts hard-code an HPC working-directory path (`path_base`, `results_folder`)
+that must be edited to a local path before running.
+
+## Creating the working environment
+
+The repository ships a conda [`environment.yml`](environment.yml) pinning all dependencies listed
+above. To create and use the environment:
+
+```bash
+conda env create -f environment.yml
+conda activate envfimfourier
+```
+
+This installs Python, JAX, Optax, PennyLane, NumPy/SciPy, scikit-learn, Matplotlib, and Jupyter
+(with `ipykernel`) from `conda-forge`. Note that `autoray` (a PennyLane dependency) must stay below
+`0.7` — newer releases dropped `NumpyMimic`, which `pennylane.numpy` still imports, breaking
+`import pennylane`; the pin in `environment.yml` handles this automatically.
+
+To make the environment available as a Jupyter kernel (for running the `.ipynb` notebooks):
+
+```bash
+python -m ipykernel install --user --name envfimfourier
+```
+
+To remove the environment:
+
+```bash
+conda env remove -n envfimfourier
+```
 
 ## Repository overview
 
