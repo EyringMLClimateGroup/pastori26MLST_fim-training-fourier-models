@@ -6,6 +6,10 @@ Code for the numerical experiments of:
 
 **Corresponding Author**: Lorenzo Pastori ([l.pastori.tn@gmail.com](l.pastori.tn@gmail.com))
 
+The current release on zenodo can be found here:
+
+[![DOI](https://zenodo.org/badge/1308786351.svg)](https://zenodo.org/badge/latestdoi/1308786351)
+
 ## Description
 
 Quantum neural networks (QNNs) with angle-encoded inputs, and more generally any model built from
